@@ -3,6 +3,7 @@ let input = document.getElementById("userinput");
 const ul = document.querySelector("ul");
 let li = document.getElementsByTagName("li");
 
+
 // return input data
 const inputLength = () => {
     return input.value.length;
@@ -41,20 +42,20 @@ const tglClass = () => {
 }
 
 const strikeThroughItem = () => {
-    for (i=0; i<li.length; i++) {
+    for(i=0; i<li.length; i++) {
         li[i].addEventListener("click", tglClass);
     }
 }
 
 const trashListElement = () => {
     let button = document.querySelectorAll('li button');
-    for (i=0; i<button.length; i++) {
+    for(i=0; i<button.length; i++) {
         button[i].addEventListener("click", clearElement);
     } 
 }
 
 const clearElement = () => {
-    for (i=0; i<li.length; i++) {
+    for(i=0; i<li.length; i++) {
         this.parentNode.remove();
     }
 }
