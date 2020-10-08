@@ -66,30 +66,30 @@
 const groceryForm = document.querySelector("#search-form");
 const groceryFormInput = groceryForm.querySelector("#userinput");
 const groceryList = document.querySelector("#grocery-list-section>ul");
+groceryFormInput.focus()
 groceryForm.addEventListener("submit", event => {
     event.preventDefault();
    
-    
-
 // creation
 const listItem = document.createElement("li");
 const deleteButton = document.createElement("button");
 
 // manipulation
 listItem.innerText = groceryFormInput.value + " ";
+listItem.addEventListener("click", () => {
+    listItem.classList.toggle("done");
+})
 deleteButton.innerText = "X";
 deleteButton.addEventListener("click", () => {
     groceryList.removeChild(listItem)   
 });
-groceryForm.addEventListener("submit", input => {
-    input.value= "";
-})
+groceryFormInput.value = ''
+
 // appending
 listItem.appendChild(deleteButton);
 groceryList.appendChild(listItem);
 
-
-    
+});
 
 
 
