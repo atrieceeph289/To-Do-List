@@ -68,6 +68,7 @@ const groceryFormInput = groceryForm.querySelector("#userinput");
 const groceryList = document.querySelector("#grocery-list-section>ul");
 groceryForm.addEventListener("submit", event => {
     event.preventDefault();
+   
     
 
 // creation
@@ -80,10 +81,13 @@ deleteButton.innerText = "X";
 deleteButton.addEventListener("click", () => {
     groceryList.removeChild(listItem)   
 });
-
+groceryForm.addEventListener("submit", input => {
+    input.value= "";
+})
 // appending
 listItem.appendChild(deleteButton);
 groceryList.appendChild(listItem);
+
 
     
 
