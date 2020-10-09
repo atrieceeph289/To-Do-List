@@ -3,13 +3,6 @@ h1 {
   color: #003355;
 }
 
-.container{
-  width:100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .done {
     text-decoration: line-through;
     color: firebrick;
