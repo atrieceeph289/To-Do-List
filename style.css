@@ -2,7 +2,12 @@ h1 {
   text-shadow: 3px 5px 8px 4px;
   color: #003355;
 }
-
+.container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .done {
     text-decoration: line-through;
     color: firebrick;
