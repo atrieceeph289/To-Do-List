@@ -9,6 +9,7 @@ groceryForm.addEventListener("submit", event => {
     const listItem = document.createElement("li");
     const deleteButton = document.createElement("button");
     listItem.className = "list-item";
+    deleteButton.className = "delete-button";
 
     // manipulation
 

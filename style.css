@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-color: #AED6F1;
 }
@@ -5,18 +10,29 @@ h1 {
   text-shadow: 3px 5px 8px 4px;
   color: #003355;
 }
+
 .container{
   width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin:24px;
 }
+
 .done {
     text-decoration: line-through;
     color: rgba(254, 6, 6, 0.44);
   }
-  .list-item{
+
+.list-item{
     display:flex;
     justify-content: space-between;
     font-size: 18px;
-  }
+    padding: 4px;
+    border-bottom: 1px gray;
+}
+.delete-button{
+  color:white;
+  background-color: #C0392B;
+  width: 20%;
+}
