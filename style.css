@@ -50,6 +50,10 @@ span {
   opacity: 0;
 }
 
+.edit-button{
+  background: orange;
+}
+
 li:hover span {
   width: 40px;
   opacity: 1;
